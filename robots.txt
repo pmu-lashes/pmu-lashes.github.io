@@ -1,0 +1,12 @@
+# robots.txt for divalashes-pmu.de
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.divalashes-pmu.de/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
