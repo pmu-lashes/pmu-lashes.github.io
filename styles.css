@@ -2190,6 +2190,11 @@ body {
   align-items: center;
 }
 
+.footer p a {
+  color: white;
+  text-decoration: underline;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
