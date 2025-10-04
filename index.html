@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Diva Beauty - Beste Wimpernverlängerung Magdeburg | Wimpern Salon & Lash
+      Lifting
+    </title>
+    <meta
+      name="description"
+      content="Beste Wimpernverlängerung in Magdeburg! Wimpern Salon mit Volumen Wimpern, Wimpern Extensions und Lash Lifting. Wimpernverlängerung in meiner Nähe Magdeburg - Termin buchen!"
+    />
+    <meta
+      name="keywords"
+      content="Wimpernverlängerung Magdeburg, Wimpern auffüllen Magdeburg, Lash Lifting Magdeburg, Volumen Wimpern Magdeburg, Wimpern Extensions Magdeburg, Wimpern Salon Magdeburg, Schönheitsstudio Magdeburg, Beste Wimpernverlängerung Magdeburg, Kosmetikstudio Wimpern Magdeburg, Wimpernverlängerung in meiner Nähe Magdeburg, Wimpernverlängerung vs Lash Lifting, Pflege nach Wimpernverlängerung, Kosten Wimpernverlängerung Magdeburg, Permanent Makeup Magdeburg"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Great+Vibes&family=Allura&family=Alex+Brush&family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Maps JavaScript API -->
+    <script>
+      // Define initMap function immediately to prevent callback errors
+      window.initMap = function () {
+        // Business location coordinates (Halberstädter Str. 50, 39112 Magdeburg, Germany)
+        const businessLocation = {
+          lat: 52.114584405266626,
+          lng: 11.610058075648409,
+        };
+
+        // Create the map
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: businessLocation,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          mapId: "DEMO_MAP_ID", // Required for AdvancedMarkerElement
+        });
+
+        // Create a custom marker element
+        const markerElement = document.createElement("div");
+        markerElement.innerHTML = `
+          <svg width="40" height="50" viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0C8.954 0 0 8.954 0 20c0 15 20 30 20 30s20-15 20-30C40 8.954 31.046 0 20 0z" fill="#c48f1d"/>
+            <circle cx="20" cy="20" r="8" fill="white"/>
+            <circle cx="20" cy="20" r="4" fill="#c48f1d"/>
+          </svg>
+        `;
+        markerElement.style.cursor = "pointer";
+
+        // Add marker to the map using AdvancedMarkerElement
+        const marker = new google.maps.marker.AdvancedMarkerElement({
+          position: businessLocation,
+          map: map,
+          title: "Diva Beauty - Permanent Makeup Magdeburg",
+          content: markerElement,
+        });
+
+        // Create info window
+        const infoWindow = new google.maps.InfoWindow({
+          content: `
+            <div style="padding: 15px; max-width: 280px; background: white; border-radius: 8px;">
+              <h3 style="margin: 0 0 10px 0; color: #c48f1d; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600;">Diva Beauty</h3>
+              <p style="margin: 0 0 8px 0; font-size: 14px; color: #c48f1d; font-weight: 500;">Permanent Makeup & Schönheitspflege</p>
+              <p style="margin: 0 0 12px 0; font-size: 14px; color: #c48f1d; line-height: 1.4;">Halberstädter Str. 50<br>39112 Magdeburg, Deutschland</p>
+              <a href="tel:+491723551196" style="color: #c48f1d; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-flex; align-items: center; gap: 5px;">
+                📞 +49 172 3551196
+              </a>
+            </div>
+          `,
+        });
+
+        // Add click event to marker
+        marker.addListener("click", () => {
+          infoWindow.open(map, marker);
+        });
+
+        // Add click event to map to close info window
+        map.addListener("click", () => {
+          infoWindow.close();
+        });
+
+        // Make map responsive
+        google.maps.event.addDomListener(window, "resize", () => {
+          const center = map.getCenter();
+          google.maps.event.trigger(map, "resize");
+          map.setCenter(center);
+        });
+      };
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4hxAxc9cFJ3ExqyQQWaW--haRrrtuLPk&callback=initMap&loading=async&libraries=marker"
+    ></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="images/favicon/android-chrome-512x512.png"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-container">
+            <img
+              src="images/logo-alt.png"
+              alt="Diva Beauty Logo"
+              class="logo-image"
+            />
+          </div>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#services" class="nav-link">Leistungen</a>
+          <a href="blog/index.html" class="nav-link">Blog</a>
+          <a href="#about" class="nav-link">Über mich</a>
+          <a href="#contact" class="nav-link">Kontakt</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="main-title">PERMANENT MAKEUP</span>
+              <span class="sub-title">& SCHÖNHEITSPFLEGE</span>
+            </h1>
+            <p class="hero-description">
+              Beste Wimpernverlängerung in Magdeburg! Unser Wimpern Salon bietet
+              Volumen Wimpern, Wimpern Extensions, Lash Lifting und Wimpern
+              auffüllen in Magdeburg. Wimpernverlängerung in meiner Nähe - Ihre
+              Schönheit ist unsere Leidenschaft.
+            </p>
+            <div class="hero-buttons">
+              <a href="tel:+491723551196" class="hero-btn primary">
+                <span class="btn-text">Termin buchen</span>
+                <i class="fas fa-phone"></i>
+              </a>
+              <button class="hero-btn secondary" onclick="scrollToServices()">
+                <span class="btn-text">Leistungen</span>
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="portrait-container">
+              <img
+                src="images/logo-primary.png"
+                alt="Domante Naujokaite - Beauty Specialist"
+                class="portrait-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title">Was unsere Kunden sagen</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Absolut fantastisch! Domantė hat meine Powder Brows perfekt
+              gemacht. Sehr professionell und das Ergebnis ist genau wie
+              gewünscht. Kann ich nur weiterempfehlen!"
+            </p>
+            <div class="review-author">
+              <strong>Sarah M.</strong>
+              <span class="review-date">vor 2 Wochen</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Tolle Behandlung! Sehr sauber und hygienisch. Die Beratung war
+              ausführlich und das Ergebnis übertrifft meine Erwartungen. Vielen
+              Dank!"
+            </p>
+            <div class="review-author">
+              <strong>Anna K.</strong>
+              <span class="review-date">vor 1 Monat</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Perfekte Lippenpigmentierung! Domantė ist sehr erfahren und hat
+              mir genau das Ergebnis gegeben, das ich mir vorgestellt habe. Sehr
+              empfehlenswert!"
+            </p>
+            <div class="review-author">
+              <strong>Maria L.</strong>
+              <span class="review-date">vor 3 Wochen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Unsere Leistungen</h2>
+        <div class="services-grid">
+          <div class="service-card accordion-card">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="image-container">
+                <img
+                  src="images/portfolio-1.jpeg"
+                  alt="Powderbrows"
+                  class="service-card-image"
+                />
+                <div class="image-overlay">
+                  <h3 class="overlay-title">POWDER BROWS</h3>
+                  <p class="overlay-description">
+                    Natürliche, dauerhafte Augenbrauen
+                  </p>
+                  <button
+                    class="overlay-button"
+                    onclick="event.stopPropagation(); scrollToServices()"
+                  >
+                    Mehr erfahren
+                  </button>
+                </div>
+              </div>
+              <div class="accordion-title-section">
+                <h3>POWDER BROWS</h3>
+                <div class="accordion-toggle">
+                  <span class="read-more-text">Read more...</span>
+                  <span class="read-less-text">Read less</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="service-description">
+                <p class="intro-text">
+                  Möchtest du endlich volle und ausdrucksstarke Augenbrauen
+                  haben? Dann sind Powder Brows genau das Richtige für dich!
+                </p>
+
+                <p class="method-text">
+                  Bei dieser Methode wird auf starke Konturen komplett
+                  verzichtet. Der Fokus liegt besonders auf der unteren
+                  Brauenkontur, um einen sauberen Concealer-Effekt zu erzielen.
+                </p>
+
+                <p class="technique-text">
+                  Die restliche Braue wird gleichmäßig schattiert, um die
+                  gewünschte Fülle zu erreichen. Im Gegensatz zum Microblading
+                  werden hier keine Härchen geritzt, sondern eine feine
+                  Schattierung pigmentiert.
+                </p>
+
+                <p class="result-text">
+                  Trotz der Fülle wirkt das Ergebnis natürlich.
+                </p>
+              </div>
+
+              <div class="powder-brows-faq">
+                <h4 class="faq-section-title">Häufige Fragen</h4>
+
+                <div class="faq-item-inline" onclick="toggleFaqItem(this)">
+                  <h5 class="faq-question-inline">
+                    Wie lange halten Powder Brows?
+                    <span class="faq-toggle-icon">+</span>
+                  </h5>
+                  <p class="faq-answer-inline">
+                    Powder Brows halten in der Regel 2-4 Jahre, abhängig von
+                    verschiedenen Faktoren wie Hauttyp, Lebensstil und Pflege.
+                  </p>
+                </div>
+
+                <div class="faq-item-inline" onclick="toggleFaqItem(this)">
+                  <h5 class="faq-question-inline">
+                    Wie schmerzhaft ist die Behandlung?
+                    <span class="faq-toggle-icon">+</span>
+                  </h5>
+                  <p class="faq-answer-inline">
+                    Die Powder Brows Behandlung ist nur gering schmerzhaft. Wir
+                    verwenden eine betäubende Creme, um den Komfort während der
+                    Behandlung zu maximieren.
+                  </p>
+                </div>
+
+                <div class="faq-item-inline" onclick="toggleFaqItem(this)">
+                  <h5 class="faq-question-inline">
+                    Wie lange dauert die Heilung der Powder Brows?
+                    <span class="faq-toggle-icon">+</span>
+                  </h5>
+                  <p class="faq-answer-inline">
+                    Die vollständige Heilung dauert etwa 4-6 Wochen. In dieser
+                    Zeit sollten Sie die Nachbehandlungspflege befolgen und
+                    direkte Sonneneinstrahlung vermeiden.
+                  </p>
+                </div>
+
+                <div class="faq-item-inline" onclick="toggleFaqItem(this)">
+                  <h5 class="faq-question-inline">
+                    Wie lange dauert die Powder Brows Behandlung?
+                    <span class="faq-toggle-icon">+</span>
+                  </h5>
+                  <p class="faq-answer-inline">
+                    Die Erstbehandlung dauert etwa 2-3 Stunden, einschließlich
+                    Beratung, Design und Pigmentierung. Die Nachbehandlung nach
+                    4-6 Wochen dauert etwa 1-2 Stunden.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Intensität:</strong> leicht bis mittel
+                </div>
+                <div class="detail-item">
+                  <strong>Haltbarkeit:</strong> 2-4 Jahre
+                </div>
+                <div class="detail-item">
+                  <strong>Schmerzen:</strong> gering
+                </div>
+              </div>
+              <div class="service-package">
+                <div class="package-title">Erstbehandlung</div>
+                <div class="package-includes">
+                  Inkl. einer Nachbehandlung (nach 4-6 Wochen)
+                </div>
+                <div class="service-price">320 €</div>
+              </div>
+            </div>
+          </div>
+          <div class="service-card accordion-card">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="image-container">
+                <img
+                  src="images/portfolio-2.jpeg"
+                  alt="Lippenpigmentierung"
+                  class="service-card-image"
+                />
+                <div class="image-overlay">
+                  <h3 class="overlay-title">LIPPENPIGMENTIERUNG</h3>
+                  <p class="overlay-description">
+                    Dauerhafte Lippen für natürlichen Look
+                  </p>
+                  <button
+                    class="overlay-button"
+                    onclick="event.stopPropagation(); scrollToServices()"
+                  >
+                    Mehr erfahren
+                  </button>
+                </div>
+              </div>
+              <div class="accordion-title-section">
+                <h3>LIPPENPIGMENTIERUNG</h3>
+                <div class="accordion-toggle">
+                  <span class="read-more-text">Read more...</span>
+                  <span class="read-less-text">Read less</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="service-description">
+                <p class="intro-text">
+                  Verleihen Sie Ihren Lippen einen natürlichen, frischen Look
+                  mit unserer professionellen Lippenpigmentierung.
+                </p>
+
+                <p class="method-text">
+                  Die Lippenpigmentierung ist eine dauerhafte Make-up-Technik,
+                  die Ihre natürliche Lippenfarbe verstärkt und die Lippenkontur
+                  definiert.
+                </p>
+
+                <p class="technique-text">
+                  Wir verwenden hochwertige Pigmente, die perfekt zu Ihrem
+                  Hautton passen und ein natürliches Ergebnis erzielen.
+                </p>
+
+                <p class="result-text">
+                  Das Ergebnis ist langanhaltend und gibt Ihnen jeden Tag
+                  perfekte Lippen.
+                </p>
+              </div>
+
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Intensität:</strong> leicht bis mittel
+                </div>
+                <div class="detail-item">
+                  <strong>Haltbarkeit:</strong> 2-3 Jahre
+                </div>
+                <div class="detail-item">
+                  <strong>Schmerzen:</strong> gering
+                </div>
+              </div>
+              <div class="service-package">
+                <div class="package-title">Erstbehandlung</div>
+                <div class="package-includes">
+                  Inkl. einer Nachbehandlung (nach 4-6 Wochen)
+                </div>
+                <div class="service-price">280 €</div>
+              </div>
+            </div>
+          </div>
+          <div class="service-card accordion-card">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="image-container">
+                <img
+                  src="images/portfolio-3.jpeg"
+                  alt="Wimpernverlängerung"
+                  class="service-card-image"
+                />
+                <div class="image-overlay">
+                  <h3 class="overlay-title">Lash & Brow Lifting</h3>
+                  <p class="overlay-description">
+                    Luxuriöse Wimpernbehandlung für dramatische Ergebnisse
+                  </p>
+                  <button
+                    class="overlay-button"
+                    onclick="event.stopPropagation(); scrollToServices()"
+                  >
+                    Mehr erfahren
+                  </button>
+                </div>
+              </div>
+              <div class="accordion-title-section">
+                <h3>Lash Lifting</h3>
+                <div class="accordion-toggle">
+                  <span class="read-more-text">Read more...</span>
+                  <span class="read-less-text">Read less</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="service-description">
+                <p class="intro-text">
+                  Professionelles Lash Lifting in Magdeburg! Verleihen Sie Ihren
+                  Wimpern mehr Volumen, Länge und Drama mit unserer
+                  professionellen Wimpernverlängerung in unserem
+                  Schönheitsstudio Magdeburg.
+                </p>
+
+                <p class="method-text">
+                  Bei der Wimpernverlängerung in Magdeburg werden einzelne
+                  künstliche Wimpern auf Ihre natürlichen Wimpern geklebt, um
+                  Länge und Volumen zu schaffen.
+                </p>
+
+                <p class="technique-text">
+                  Das Lash Lifting in Magdeburg hebt Ihre natürlichen Wimpern an
+                  und gibt ihnen eine schöne Krümmung für einen wachmachenden
+                  Blick.
+                </p>
+
+                <p class="result-text">
+                  Das Ergebnis sind voluminöse, lange Wimpern, die Ihren Blick
+                  betonen und Ihnen ein glamouröses Aussehen verleihen.
+                </p>
+              </div>
+
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Haltbarkeit:</strong> 3-4 Wochen
+                </div>
+                <div class="detail-item">
+                  <strong>Behandlungsdauer:</strong> 1.5-2 Stunden
+                </div>
+                <div class="detail-item"><strong>Schmerzen:</strong> keine</div>
+              </div>
+              <div class="service-package">
+                <div class="package-title">Wimpernverlängerung</div>
+                <div class="package-includes">
+                  Inkl. Beratung und Nachbehandlung
+                </div>
+                <div class="service-price">80 €</div>
+              </div>
+            </div>
+          </div>
+          <div class="service-card accordion-card">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="image-container">
+                <img
+                  src="images/portfolio-4.jpeg"
+                  alt="Wimpernverlängerung"
+                  class="service-card-image"
+                />
+                <div class="image-overlay">
+                  <h3 class="overlay-title">WIMPERNVERLÄNGERUNG</h3>
+                  <p class="overlay-description">
+                    Professionelle Wimpernverlängerung für voluminöse Wimpern
+                  </p>
+                  <button
+                    class="overlay-button"
+                    onclick="event.stopPropagation(); scrollToServices()"
+                  >
+                    Mehr erfahren
+                  </button>
+                </div>
+              </div>
+              <div class="accordion-title-section">
+                <h3>WIMPERNVERLÄNGERUNG & VOLUMEN WIMPERN</h3>
+                <div class="accordion-toggle">
+                  <span class="read-more-text">Read more...</span>
+                  <span class="read-less-text">Read less</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="service-description">
+                <p class="intro-text">
+                  Beste Wimpernverlängerung in Magdeburg! Verleihen Sie Ihren
+                  Wimpern mehr Volumen, Länge und Drama mit unseren Wimpern
+                  Extensions und Volumen Wimpern in unserem Wimpern Salon
+                  Magdeburg.
+                </p>
+
+                <p class="method-text">
+                  Bei der Wimpernverlängerung in Magdeburg werden einzelne
+                  künstliche Wimpern auf Ihre natürlichen Wimpern geklebt, um
+                  Länge und Volumen zu schaffen. Unsere Wimpern Extensions und
+                  Volumen Wimpern Techniken sorgen für perfekte Ergebnisse.
+                </p>
+
+                <p class="technique-text">
+                  Wir verwenden hochwertige Materialien und Techniken für ein
+                  natürliches und langanhaltendes Ergebnis. Unser Wimpern Salon
+                  Magdeburg bietet die beste Wimpernverlängerung in Magdeburg.
+                </p>
+
+                <p class="result-text">
+                  Das Ergebnis sind voluminöse, lange Wimpern, die Ihren Blick
+                  betonen und Ihnen ein glamouröses Aussehen verleihen.
+                </p>
+              </div>
+
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Haltbarkeit:</strong> 3-4 Wochen
+                </div>
+                <div class="detail-item">
+                  <strong>Behandlungsdauer:</strong> 1.5-2 Stunden
+                </div>
+                <div class="detail-item"><strong>Schmerzen:</strong> keine</div>
+              </div>
+              <div class="service-package">
+                <div class="package-title">Wimpernverlängerung</div>
+                <div class="package-includes">
+                  Inkl. Beratung und Nachbehandlung
+                </div>
+                <div class="service-price">85 €</div>
+              </div>
+            </div>
+          </div>
+          <div class="service-card accordion-card">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="image-container">
+                <img
+                  src="images/portfolio-6.jpeg"
+                  alt="Microneedling"
+                  class="service-card-image"
+                />
+                <div class="image-overlay">
+                  <h3 class="overlay-title">MICRONEEDLING</h3>
+                  <p class="overlay-description">
+                    Professionelle Hautverjüngung für strahlende Haut
+                  </p>
+                  <button
+                    class="overlay-button"
+                    onclick="event.stopPropagation(); scrollToServices()"
+                  >
+                    Mehr erfahren
+                  </button>
+                </div>
+              </div>
+              <div class="accordion-title-section">
+                <h3>MICRONEEDLING</h3>
+                <div class="accordion-toggle">
+                  <span class="read-more-text">Read more...</span>
+                  <span class="read-less-text">Read less</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="service-description">
+                <p class="intro-text">
+                  Verjüngen Sie Ihre Haut mit unserer professionellen
+                  Microneedling-Behandlung für ein strahlendes und jugendliches
+                  Aussehen.
+                </p>
+
+                <p class="method-text">
+                  Microneedling ist eine innovative Behandlung, bei der winzige
+                  Nadeln die Haut stimulieren und die natürliche
+                  Kollagenproduktion anregen.
+                </p>
+
+                <p class="technique-text">
+                  Die Behandlung verbessert die Hauttextur, reduziert Narben,
+                  Falten und Pigmentflecken für ein gleichmäßiges und glattes
+                  Hautbild.
+                </p>
+
+                <p class="result-text">
+                  Das Ergebnis ist eine strahlende, verjüngte Haut mit
+                  verbesserter Textur und reduzierten Anzeichen der
+                  Hautalterung.
+                </p>
+              </div>
+
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Behandlungsdauer:</strong> 60-90 Minuten
+                </div>
+                <div class="detail-item">
+                  <strong>Nachbehandlung:</strong> 3-5 Tage
+                </div>
+                <div class="detail-item">
+                  <strong>Schmerzen:</strong> minimal
+                </div>
+              </div>
+              <div class="service-package">
+                <div class="package-title">Microneedling Behandlung</div>
+                <div class="package-includes">
+                  Inkl. Beratung und Nachbehandlungspflege
+                </div>
+                <div class="service-price">120 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <h2 class="section-title">Beauty Blog</h2>
+        <p class="blog-subtitle">
+          Tipps, Tricks und aktuelle Trends rund um Wimpernverlängerung
+          Magdeburg, Volumen Wimpern, Lash Lifting Magdeburg und Wimpern
+          Extensions in unserem Wimpern Salon Magdeburg
+        </p>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-image">
+              <img
+                src="images/portfolio-1.jpeg"
+                alt="Powder Brows Nachbehandlung"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date">15. Januar 2025</span>
+                <span class="blog-category">Powder Brows</span>
+              </div>
+              <h3 class="blog-title">
+                Powder Brows Nachbehandlung Magdeburg: Was Sie wissen müssen
+              </h3>
+              <p class="blog-excerpt">
+                Erfahren Sie alles über die richtige Nachbehandlung Ihrer Powder
+                Brows in unserem Schönheitsstudio Magdeburg für optimale
+                Ergebnisse und langanhaltende Schönheit.
+              </p>
+              <a href="blog/powder-brows-nachbehandlung.html" class="blog-link"
+                >Weiterlesen →</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img
+                src="images/portfolio-2.jpeg"
+                alt="Lippenpigmentierung Tipps"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date">10. Januar 2025</span>
+                <span class="blog-category">Lippenpigmentierung</span>
+              </div>
+              <h3 class="blog-title">
+                Lippenpigmentierung: Vorbereitung und Pflege
+              </h3>
+              <p class="blog-excerpt">
+                Alles was Sie vor und nach einer Lippenpigmentierung beachten
+                sollten für perfekte Ergebnisse.
+              </p>
+              <a href="blog/lippenpigmentierung-tipps.html" class="blog-link"
+                >Weiterlesen →</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img
+                src="images/portfolio-3.jpeg"
+                alt="Wimpernverlängerung Guide"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date">5. Januar 2025</span>
+                <span class="blog-category">Wimpernverlängerung</span>
+              </div>
+              <h3 class="blog-title">
+                Wimpernverlängerung: Der komplette Guide
+              </h3>
+              <p class="blog-excerpt">
+                Von der Vorbereitung bis zur Pflege - alles was Sie über
+                Wimpernverlängerung wissen müssen.
+              </p>
+              <a href="blog/wimpernverlaengerung-guide.html" class="blog-link"
+                >Weiterlesen →</a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="blog-cta">
+          <a href="blog/index.html" class="blog-btn"
+            >Alle Blog-Artikel ansehen</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Über mich</h2>
+            <p>
+              Mein Name ist Domantė und meine Leidenschaft ist es, Schönheit
+              hervorzuheben und zu unterstreichen. Seit mehreren Jahren arbeite
+              ich im Bereich Permanent Make-up und Wimpern- sowie
+              Augenbrauenbehandlungen in unserem Schönheitsstudio und Wimpern
+              Salon Magdeburg.
+            </p>
+            <p>
+              Ich habe mich auf Powder Brows, Brow Lifting, Lippenpigmentierung
+              sowie Wimpernverlängerung, Volumen Wimpern und Lash Lifting in
+              Magdeburg spezialisiert. Jede Behandlung ist für mich mehr als nur
+              eine Technik – sie ist ein Weg, die individuelle Ausstrahlung
+              meiner Kundinnen zu betonen und ihr Selbstbewusstsein zu stärken.
+            </p>
+            <p>
+              Mir ist es wichtig, auf die Wünsche jeder einzelnen Kundin
+              einzugehen und gemeinsam das beste Ergebnis zu erzielen –
+              natürlich, harmonisch und typgerecht. Schönheit bedeutet für mich
+              nicht nur äußere Perfektion, sondern vor allem ein gutes Gefühl
+              und Selbstsicherheit im Alltag.
+            </p>
+            <p>
+              In unserem Schönheitsstudio und Wimpern Salon Magdeburg findest du
+              eine entspannte Atmosphäre, Professionalität und Hingabe – damit
+              du dich nicht nur schön, sondern auch besonders fühlst. Beste
+              Wimpernverlängerung in Magdeburg!
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="images/logo-secondary.png"
+              alt="Domantė Naujokaite - Beauty Specialist"
+              class="about-portrait"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div class="contact-item-content">
+                <span>+49 172 3551196</span>
+                <a href="tel:+491723551196" class="call-btn">
+                  <i class="fas fa-phone"></i>
+                  Click to Call
+                </a>
+                <a
+                  href="https://wa.me/491723551196"
+                  target="_blank"
+                  class="whatsapp-btn"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-item-content">
+                <span>Halberstädter Str. 50<br />39112 Magdeburg, Germany</span>
+                <a
+                  href="https://maps.app.goo.gl/vCp1BgmE7JBGu98v8"
+                  target="_blank"
+                  class="directions-btn"
+                >
+                  <i class="fas fa-directions"></i>
+                  Get Directions
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Termine nach Vereinbarung</span>
+            </div>
+          </div>
+          <div class="map-container">
+            <div id="map" class="google-map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 divalashes-pmu.de</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/divabeautysalon2020/"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/diva.beauty_lashes_pmu_md"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Google Maps Static API (no key needed for basic usage) -->
+    <script src="script.js"></script>
+  </body>
+</html>
