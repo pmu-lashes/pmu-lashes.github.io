@@ -231,6 +231,14 @@ function toggleAccordion(header) {
   // Toggle current accordion
   if (!isActive) {
     accordionCard.classList.add("active");
+    // Smooth scroll to the accordion card to keep it in view
+    setTimeout(() => {
+      accordionCard.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }, 100);
   }
 }
 
