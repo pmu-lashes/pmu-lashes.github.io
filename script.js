@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Google Reviews Data (injected from reviews.json)
 const REVIEWS_DATA = {
-  lastUpdated: "2025-10-04T08:01:33.805Z",
+  lastUpdated: "2025-10-04T08:02:26.868Z",
   placeInfo: {
     name: "Diva Beauty",
     address: "Halberstädter Str. 50, 39112 Magdeburg, Deutschland",
@@ -364,18 +364,18 @@ const REVIEWS_DATA = {
       language: "de",
     },
     {
-      id: 1738667914,
-      authorName: "Stefanie Schmidt",
+      id: 1738671914,
+      authorName: "Sarah H",
       authorPhoto:
         "https://lh3.googleusercontent.com/a/ACg8ocKkEfhDatewn0FJrSHr9wYU_t3FeLCaZdPyxw9RvFmP-8ESAg=s128-c0x00000000-cc-rp-mo",
       rating: 5,
-      text: "Ich vergebe gern 5 Sterne.\nIch fühle mich super aufgehoben und die Wimpern halten wir ich es mir vorstelle - Nathalie macht einen super Job.\nDas Studio ist schön hergerichtet und sauber, man fühlt sich wirklich wohl.",
+      text: "Seit nun fast 2 Jahren gehe ich mittlerweile zu Domante zum Wimpern auffüllen. Die hohe Qualität spricht für sich. Auf Wünsche bezüglich Länge und Fülle wird jederzeit eingegangen. Bin sehr dankbar eine solch tolle Wimpernfee zu haben und kann sie von Herzen weiterempfehlen.",
       publishTime: "2025-02-04T11:18:34.000Z",
       relativeTime: "vor 8 Monaten",
       language: "de",
     },
     {
-      id: 1713977510,
+      id: 1713980510,
       authorName: "Al ly",
       authorPhoto:
         "https://lh3.googleusercontent.com/a/ACg8ocKBBZC0cNZOeeR2u3-TbdEZfhHHFFINI5kkD7_UzKVwrbd0MBw=s128-c0x00000000-cc-rp-mo",
@@ -386,12 +386,12 @@ const REVIEWS_DATA = {
       language: "de",
     },
     {
-      id: 1713969561,
-      authorName: "Sarah Hartmann",
+      id: 1713973561,
+      authorName: "Sandra Schröder",
       authorPhoto:
         "https://lh3.googleusercontent.com/a-/ALV-UjWhQo0KN5Ndp1yp_pH84PK-gDhYBW7rmtocAtM7ElGalJowi6Pm=s128-c0x00000000-cc-rp-mo",
       rating: 5,
-      text: "Seit nun fast 2 Jahren gehe ich mittlerweile zu Domante zum Wimpern auffüllen. Die hohe Qualität spricht für sich. Auf Wünsche bezüglich Länge und Fülle wird jederzeit eingegangen. Bin sehr dankbar eine solch tolle Wimpernfee zu haben und kann sie von Herzen weiterempfehlen.",
+      text: "Ich vergebe sehr gerne 5 Sterne! Domante liefert eine äußerst ordentliche Arbeit. Seit über einem Jahr gehe ich zu ihr für Wimpernverlängerungen und bin einfach begeistert, wie natürlich schön meine Wimpern aussehen. Vielen Dank für den tollen Service, angefangen von der Terminvereinbarung bis hin zur Umsetzung.",
       publishTime: "2024-04-24T14:39:21.000Z",
       relativeTime: "vor einem Jahr",
       language: "de",
