@@ -1,0 +1,10 @@
+# Security headers for Netlify / Cloudflare Pages deployments
+# For GitHub Pages: use Cloudflare proxy and set these as transform rules
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=()
+  X-XSS-Protection: 1; mode=block

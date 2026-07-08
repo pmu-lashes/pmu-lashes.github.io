@@ -1,0 +1,44 @@
+# robots.txt for divabeautysalon.de
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# AI Crawlers — explicitly allow for visibility in AI search (ChatGPT, Perplexity, Claude, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://divabeautysalon.de/sitemap.xml
+LLMs: https://divabeautysalon.de/llms.txt
+LLMs-Full: https://divabeautysalon.de/llms-full.txt
